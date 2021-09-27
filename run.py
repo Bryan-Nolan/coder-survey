@@ -1,5 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
+import os
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -17,9 +18,7 @@ def get_questions_data():
     Get the Questions ans Answers from worksheet
     """
     questions_data = SHEET.worksheet("questions").get_all_values()
-    question_row = questions_data[1]
-    print(question_row)
-    
+
     return questions_data
 
 def calculate_question_total (data):
@@ -30,16 +29,26 @@ def calculate_question_total (data):
 
     return total_questions
 
-    
+def questions_output(data):
+
+    for value in range(len(data)-1):
+        question_row = data[value+1]
+        print(f"{question_row[0]}: {question_row[1]}\n")
+        print("Please enter the number of her choice.")
+        print(f"1: {question_row[2]} 2: {question_row[3]} 3: {question_row[4]} 4: {question_row[5]}\n")
+
 def main():
     """
     This is the main function which runs all functions
     """
+    clear = lambda:os.system('cls')
+    clear()
     data = get_questions_data()
     total_questions = calculate_question_total(data)
     print("Welcome to my Coder Survey\n")
     print(f"Please anwser the following {total_questions} questions\n")
-    print("Results of Survey will be posted to screen\n")
+    print("Results of Survey will be posted to screen after final question\n")
+    questions_output(data)
     
 
 main()
