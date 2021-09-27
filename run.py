@@ -34,7 +34,7 @@ def questions_output(data):
     for value in range(len(data)-1):
         question_row = data[value+1]
         print(f"{question_row[0]}: {question_row[1]}\n")
-        print("Please enter the number of her choice.")
+        print("Please enter the number of your choice.\n")
         print(f"1: {question_row[2]} 2: {question_row[3]} 3: {question_row[4]} 4: {question_row[5]}\n")
 
 def main():
