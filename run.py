@@ -1,6 +1,5 @@
 import gspread
 from google.oauth2.service_account import Credentials
-import os
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -13,42 +12,76 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('coder_survey_questions')
 
+
 def get_questions_data():
     """
     Get the Questions ans Answers from worksheet
     """
     questions_data = SHEET.worksheet("questions").get_all_values()
-
     return questions_data
 
-def calculate_question_total (data):
+
+def calculate_question_total(data):
     """
     From the data received from teh worksheet calcuate question total
     """
     total_questions = len(data)-1
-
     return total_questions
 
-def questions_output(data):
 
+def get_results_sheet_data():
+    """
+    Get the totals from result sheet
+    """
+    results_data = SHEET.worksheet("results").get_all_values()
+    return results_data
+
+
+def questions_output(data):
+    """
+    Outputting data got from sheets to screen
+    """
+    choice_str = []
+    choice_num = []
     for value in range(len(data)-1):
         question_row = data[value+1]
-        print(f"{question_row[0]}: {question_row[1]}\n")
-        print("Please enter the number of your choice.\n")
+        print(f"\n\nQuestion {question_row[0]}")
+        print(f"{question_row[1]}\n")
+        print("Please enter the number of your choice from 1-4.\n")
         print(f"1: {question_row[2]} 2: {question_row[3]} 3: {question_row[4]} 4: {question_row[5]}\n")
+        data_str = input("Enter your choice here: ")
+        validate_data(data_str)
+        choice_str.append(question_row[int(data_str)+1])
+        choice_num.append(int(data_str))
+    return choice_num, choice_str
+
+
+def validate_data(value):
+    """
+    Using try except to validate data.  That only
+    numbers between 1 and 4 entered for choices
+    """
+    try:
+        if 1 > int(value) or int(value) > 4:
+            raise ValueError(
+                f"Please only enter values 1 - 4 not {value} "
+            )
+    except ValueError as e:
+        print(f"Invalid data: {e}, please try again.\n")
+
 
 def main():
     """
     This is the main function which runs all functions
     """
-    clear = lambda:os.system('cls')
-    clear()
     data = get_questions_data()
     total_questions = calculate_question_total(data)
+    get_results_sheet_data()
     print("Welcome to my Coder Survey\n")
-    print(f"Please anwser the following {total_questions} questions\n")
+    print(f"Please answer the following {total_questions} questions\n")
     print("Results of Survey will be posted to screen after final question\n")
-    questions_output(data)
-    
+    choice_num, choice_str = questions_output(data)
+    print(f"Choices String: {choice_str} Choice Number: {choice_num}")
+
 
 main()
