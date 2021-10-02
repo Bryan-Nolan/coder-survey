@@ -68,6 +68,24 @@ def validate_data(value):
             )
     except ValueError as e:
         print(f"Invalid data: {e}, please try again.\n")
+        return
+
+
+def output_choices(choice_str):
+    """
+    Outputs to screen choices made by user
+    """
+    print("\nYou made the following choices:")
+    for i in range(len(choice_str)):
+        print(f"Question {i+1}: {choice_str[i]}")
+
+
+def calcuate_results(results_data, choice_num):
+    """
+    Update results from sheet and out put to screen
+    """
+    print(results_data)
+    print(choice_num)
 
 
 def main():
@@ -76,12 +94,13 @@ def main():
     """
     data = get_questions_data()
     total_questions = calculate_question_total(data)
-    get_results_sheet_data()
+    results_data = get_results_sheet_data()
     print("Welcome to my Coder Survey\n")
     print(f"Please answer the following {total_questions} questions\n")
     print("Results of Survey will be posted to screen after final question\n")
     choice_num, choice_str = questions_output(data)
-    print(f"Choices String: {choice_str} Choice Number: {choice_num}")
+    output_choices(choice_str)
+    calcuate_results(results_data, choice_num)
 
 
 main()
