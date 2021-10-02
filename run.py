@@ -80,12 +80,15 @@ def output_choices(choice_str):
         print(f"Question {i+1}: {choice_str[i]}")
 
 
-def calcuate_results(results_data, choice_num):
+def calculate_results(results_data, choice_num):
     """
     Update results from sheet and out put to screen
     """
-    print(results_data)
-    print(choice_num)
+    for value in range(len(results_data)-1):
+        results_data_row = []
+        results_data_row.append(results_data[value+1])
+        print(results_data_row)
+        print(len(results_data_row))
 
 
 def main():
@@ -100,7 +103,7 @@ def main():
     print("Results of Survey will be posted to screen after final question\n")
     choice_num, choice_str = questions_output(data)
     output_choices(choice_str)
-    calcuate_results(results_data, choice_num)
+    calculate_results(results_data, choice_num)
 
 
 main()
