@@ -92,9 +92,10 @@ def update_results_data(choice_num_list):
     """
     Update results from sheet and out put to screen
     """
+    print("\nUpdating results worksheet. Results will follow.")
     results = SHEET.worksheet("results").get_all_records()
-    updated_results = []
     row_data = []
+    current_results_data = []
     worksheet_to_update = SHEET.worksheet("results")
     worksheet_to_update.delete_rows(2, len(choice_num_list)+1)
     for value in range(len(choice_num_list)):
@@ -102,11 +103,9 @@ def update_results_data(choice_num_list):
         choice_num = choice_num_list[value]
         updated_row = update_results_row(choice_num, row)
         row_data = list(updated_row.values())
+        current_results_data.append(row_data)
         worksheet_to_update.append_row(row_data)
-        print(row_data)
-        updated_results.append(updated_row)
-
-    return updated_results
+    return current_results_data
 
 
 def update_results_row(choice_num, row):
@@ -134,12 +133,20 @@ def update_results_row(choice_num, row):
         print("Invalid Data")
 
 
-def update_worksheet(updated_results, worksheet):
+def calculate_totals(current_results_data, data):
     """
-    Function to udpate workshet with latest results
+    Calculate total participants and corresponding % to choices
     """
-    print(f"Updating {worksheet} worksheet.  Results will follow.")
-    print("Done")
+    data_row = []
+    data_row = current_results_data[0]
+    data_row.pop(0)
+    total = sum(data_row)
+    print(f"\n{total} people have participated in this survey to date\n")
+    for value in range(len(data)-1):
+        data_row = current_results_data[value]
+        question_row = data[value+1]
+        print(f"Results for Question {question_row[0]}")
+        print(f"1: {question_row[2]} {round((data_row[0]/total)*100)}% 2: {question_row[3]} {round((data_row[1]/total)*100)}% 3: {question_row[4]} {round((data_row[2]/total)*100)}% 4: {question_row[5]} {round((data_row[3]/total)*100)}%\n")
 
 
 def main():
@@ -154,8 +161,8 @@ def main():
     print("Results of Survey will be posted to screen after final question\n")
     choice_num_list, choice_str = questions_output(data)
     output_choices(choice_str)
-    updated_results = update_results_data(choice_num_list)
-    update_worksheet(updated_results, "results")
+    current_results_data = update_results_data(choice_num_list)
+    calculate_totals(current_results_data, data)
 
 
 main()
