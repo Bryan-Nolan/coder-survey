@@ -146,6 +146,7 @@ def calculate_totals(current_results_data, data):
         data_row = current_results_data[value]
         question_row = data[value+1]
         print(f"Results for Question {question_row[0]}")
+        print(question_row[1])
         print(f"1: {question_row[2]} {round((data_row[0]/total)*100)}% 2: {question_row[3]} {round((data_row[1]/total)*100)}% 3: {question_row[4]} {round((data_row[2]/total)*100)}% 4: {question_row[5]} {round((data_row[3]/total)*100)}%\n")
 
 
@@ -163,6 +164,7 @@ def main():
     output_choices(choice_str)
     current_results_data = update_results_data(choice_num_list)
     calculate_totals(current_results_data, data)
+    print("\nThank you for your participation.")
 
 
 main()
