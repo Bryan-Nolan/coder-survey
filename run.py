@@ -88,21 +88,31 @@ def output_choices(choice_str):
         print(f"Question {i+1}: {choice_str[i]}")
 
 
-def calculate_results(choice_num_list):
+def update_results_data(choice_num_list):
     """
     Update results from sheet and out put to screen
     """
     results = SHEET.worksheet("results").get_all_records()
-
+    updated_results = []
+    row_data = []
+    worksheet_to_update = SHEET.worksheet("results")
+    worksheet_to_update.delete_rows(2, len(choice_num_list)+1)
     for value in range(len(choice_num_list)):
         row = results[value]
         choice_num = choice_num_list[value]
         updated_row = update_results_row(choice_num, row)
+        row_data = list(updated_row.values())
+        worksheet_to_update.append_row(row_data)
+        print(row_data)
+        updated_results.append(updated_row)
+
+    return updated_results
 
 
 def update_results_row(choice_num, row):
     """
-    Cycle throug choice numbers and increment corresponding valuer in dictionary
+    Cycle throug choice numbers and increment corresponding
+    value in dictionary
     """
     if (choice_num == 1):
         key = "Answer 1"
@@ -124,6 +134,14 @@ def update_results_row(choice_num, row):
         print("Invalid Data")
 
 
+def update_worksheet(updated_results, worksheet):
+    """
+    Function to udpate workshet with latest results
+    """
+    print(f"Updating {worksheet} worksheet.  Results will follow.")
+    print("Done")
+
+
 def main():
     """
     This is the main function which runs all functions
@@ -136,7 +154,8 @@ def main():
     print("Results of Survey will be posted to screen after final question\n")
     choice_num_list, choice_str = questions_output(data)
     output_choices(choice_str)
-    calculate_results(choice_num_list)
+    updated_results = update_results_data(choice_num_list)
+    update_worksheet(updated_results, "results")
 
 
 main()
