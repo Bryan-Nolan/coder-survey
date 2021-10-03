@@ -26,6 +26,8 @@ This project aim to ask the user a seris of questions.  Update Gooogle sheets wi
 
 ## User
 
+![First Screen ](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/first.screen.jpg - alt "First Screen")
+
 
 
 [Back to top ⇧](#)
