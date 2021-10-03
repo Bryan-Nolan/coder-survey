@@ -33,7 +33,7 @@ def get_results_sheet_data():
     """
     Get the totals from result sheet
     """
-    results_data = SHEET.worksheet("results").get_all_values()
+    results_data = SHEET.worksheet("results").get
     return results_data
 
 
@@ -49,7 +49,7 @@ def questions_output(data):
         print(f"{question_row[1]}\n")
         print("Please enter the number of your choice from 1-4.\n")
         print(f"1: {question_row[2]} 2: {question_row[3]} 3: {question_row[4]} 4: {question_row[5]}\n")
-        data_str = input("Enter your choice here: ")
+        data_str = input("Enter your choice here:\n")
         validate_data(data_str)
         choice_str.append(question_row[int(data_str)+1])
         choice_num.append(int(data_str))
