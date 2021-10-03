@@ -42,7 +42,7 @@ def questions_output(data):
     Outputting data got from sheets to screen
     """
     choice_str = []
-    choice_num = []
+    choice_num_list = []
     for value in range(len(data)-1):
         while True:
             question_row = data[value+1]
@@ -57,9 +57,9 @@ def questions_output(data):
                 break
 
         choice_str.append(question_row[int(data_str)+1])
-        choice_num.append(int(data_str))
+        choice_num_list.append(int(data_str))
 
-    return choice_num, choice_str
+    return choice_num_list, choice_str
 
 
 def validate_data(value):
@@ -88,23 +88,40 @@ def output_choices(choice_str):
         print(f"Question {i+1}: {choice_str[i]}")
 
 
-def calculate_results(results_data, choice_num):
+def calculate_results(choice_num_list):
     """
     Update results from sheet and out put to screen
     """
-    results = SHEET.worksheet("results")
-    results_data_row = []
-    updated_results_data_row = []
-    for value in range(len(results_data)-1):
-        print(value)
-        row = results.row_values(value+1)
-        row.insert(int(choice_num[value]), 1)
-        updated_results_data_row.append(row[value])
-        print(row)
-        print(len(row))
-        print(results_data_row)
-        print(updated_results_data_row)
-        print(len(results_data_row))
+    results = SHEET.worksheet("results").get_all_records()
+
+    for value in range(len(choice_num_list)):
+        row = results[value]
+        choice_num = choice_num_list[value]
+        updated_row = update_results_row(choice_num, row)
+
+
+def update_results_row(choice_num, row):
+    """
+    Cycle throug choice numbers and increment corresponding valuer in dictionary
+    """
+    if (choice_num == 1):
+        key = "Answer 1"
+        row[key] += 1
+        return row
+    elif (choice_num == 2):
+        key = "Answer 2"
+        row[key] += 1
+        return row
+    elif (choice_num == 3):
+        key = "Answer 3"
+        row[key] += 1
+        return row
+    elif (choice_num == 4):
+        key = "Answer 4"
+        row[key] += 1
+        return row
+    else:
+        print("Invalid Data")
 
 
 def main():
@@ -113,13 +130,13 @@ def main():
     """
     data = get_questions_data()
     total_questions = calculate_question_total(data)
-    results_data = get_results_sheet_data()
+    get_results_sheet_data()
     print("Welcome to my Coder Survey\n")
     print(f"Please answer the following {total_questions} questions\n")
     print("Results of Survey will be posted to screen after final question\n")
-    choice_num, choice_str = questions_output(data)
+    choice_num_list, choice_str = questions_output(data)
     output_choices(choice_str)
-    calculate_results(results_data, choice_num)
+    calculate_results(choice_num_list)
 
 
 main()
