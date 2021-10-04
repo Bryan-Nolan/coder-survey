@@ -13,11 +13,9 @@
 8. [Acknowledgements](#Acknowledgements)
 ***
 
-
 ## Project
 
 This project aims to ask the user a series of questions.  Update Google sheets with answers and to relay to the user their answers and how they compare with all other answers giving results of all the question.  My aim is to be able to add more questions to the survey without having to change python code. 
-
 
 [Back to top ⇧](#)
 
@@ -26,7 +24,6 @@ This project aims to ask the user a series of questions.  Update Google sheets w
 ![First Screen](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/first.screen.jpg)
 
 During this the user will be asked a series of questions and give predefined answers to choose from.  After answering all questions, the user will be given a list of their choices, the total of participates to date with survey and the results in percentages of what the total of participates voted for. 
-
 
 [Back to top ⇧](#)
 
@@ -40,10 +37,16 @@ There is also built-in error detection that if the user enters anything other th
 
 ![Error](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/Error.jpg)
 
-After answering all questions, the user receives a summary of all the questions asked and how other partipates responed shown as percentages.
+After answering all questions, the user receives a summary of all the questions asked and how other participants response shown as percentages.
 
 ![Results](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/results.jpg)
 
+
+### Future Features
+
+In the future I would consider adding the following feature.
+    * Users adding email addresses as to have 1 try per user
+    * Adding a feature to have an admin user as to add questions through the program.
 
 [Back to top ⇧](#)
 
@@ -65,6 +68,8 @@ During this project the following languages were used:
 
 ## Testing
 
+This has been manually tested. Code has been passed through PEP8 and the only issues are lines of code exceeding 79 characters in length.  Unauthorised inputs have also been taken into account by prompting user to enter correct data. Also used GitIo terminal to show errors and Code Institute Heroku terminal.  
+
 My Testers were my son Cormac (17) and daughter Heather (14). They provided great insight to navigating site and content.
 
 ### Validator Testing
@@ -74,8 +79,6 @@ My Testers were my son Cormac (17) and daughter Heather (14). They provided grea
 * PEP8
     [PEP8online.com](http://pep8online.com/)
     Two errors for long lines of code were shown but this does not affect running of program.
-
-
 
 ### Unfixed Bugs
 
@@ -90,7 +93,7 @@ This project was deployed using Heroku
         Fork or clone this repository
         Create a new Heroku app
         Set buildbacks to Python and NodeJS in that order
-        Link the Herohu app to the repository
+        Link the Heroku app to the repository
         Click on Deploy
 
 ### Code Survey - GitHub
