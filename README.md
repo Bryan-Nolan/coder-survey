@@ -54,9 +54,9 @@ After answering all questions, the user receives a summary of all the questions 
 
 I decided to use Google Sheets.  I used 2 work sheets. My aim was that if I gave access to someone to add question to question sheet that this would appear in survey without updating code.  The other sheet "results" would store the data inputted by user and be used to calculate results and then updated with latest users answers. 
 
-![Questions-Sheet]((https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/questions.jpg))
+![Questions-Sheet](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/questions.jpg)
 
-![Results-Sheet]((https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/sheet-results.jpg) )
+![Results-Sheet](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/sheet-results.jpg)
 
 [Back to top ⇧](#)
 
