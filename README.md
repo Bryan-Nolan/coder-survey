@@ -18,8 +18,7 @@
 
 ## Project
 
-This project aim to ask the user a seris of questions.  Update Gooogle sheets with answers and to relay to the user their answers and how they compare with the all others answers giving results of all teh question.  Aim is to design code to be able to add questions. 
-    
+This project aim to ask the user a seris of questions.  Update Gooogle sheets with answers and to relay to the user their answers and how they compare with the all others answers giving results of all the question.  My aim is to be able to add more questions to the survey without having to change python code. 
 
 
 [Back to top ⇧](#)
@@ -63,17 +62,13 @@ During this project the following languages were used:
 
 ### Languages
 
-    1. HTML
-    2. CSS
-    3. Javascript
+    1. Python
 
 ### Tools 
     
-    1. Google Fonts
-    2. Font Awesome
-    3. GitPod
-    4. GitHub
-    5. [Am I responsive](http://ami.responsivedesign.is/)
+    1. GitPod
+    2. GitHub
+    3. [Am I responsive](http://ami.responsivedesign.is/)
 
 [Back to top ⇧](#)
 
@@ -101,11 +96,20 @@ No errors just a few warning.
 
 ## Deployment
 
+This project was deployed using Heroku
+
+    Steps for deployment
+        Fork or clone this repository
+        Create a new Heroku app
+        Set buildbacks to Python and NodeJS in that order
+        Link the Herohu app to the repository
+        Click on Deploy
+
 
 
 ### Code Survey
 
-[Escape](https://bryan-nolan.github.io/Escape/)
+[Coder Survey](https://github.com/Bryan-Nolan/coder-survey)
 
 [Back to top ⇧](#)
 
@@ -114,9 +118,7 @@ No errors just a few warning.
 During the research of this project I used various sites to research issues as I was going along. 
 
 [W3 Schools] (https://www.w3schools.com/) for reaserch.
-[PIN Pad Login Screen in JavaScript - HTML, CSS & JavaScript Tutorial (Project)](https://codepen.io/dcode-software/pen/orXrXQ) was used for the intial design and layout for keypad.
-[Project 09: Crack the Safe](https://codepen.io/finpltf/pen/oRZNzM) for someideas and it is similar project.
-[Use Code to help with displaying old Guesses] (https://www.codegrepper.com/code-examples/javascript/how+to+append+li+to+ul+in+javascript) for code to help popluate ordered list with old guesses. 
+
 
 [Back to top ⇧](#)
 

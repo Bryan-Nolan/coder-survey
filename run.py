@@ -53,7 +53,7 @@ def questions_output(data):
             data_str = input("Enter your choice here:\n")
 
             if validate_data(data_str):
-                print("Data Invaild")
+                print("Thank you")
                 break
 
         choice_str.append(question_row[int(data_str)+1])
