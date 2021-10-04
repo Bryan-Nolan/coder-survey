@@ -44,9 +44,9 @@ After answering all questions, the user receives a summary of all the questions 
 
 ### Future Features
 
-In the future I would consider adding the following feature.
-    * Users adding email addresses as to have 1 try per user
-    * Adding a feature to have an admin user as to add questions through the program.
+    In the future I would consider adding the following feature.
+        - Users adding email addresses as to have 1 try per user
+        - Adding a feature to have an admin user as to add questions through the program.
 
 [Back to top ⇧](#)
 
@@ -117,7 +117,7 @@ This project was deployed using Heroku
 During the research of this project, I used various sites to research issues as I was going along. 
 
 [W3 Schools] (https://www.w3schools.com/)
-[Python.org](https://www.python.org/)
+[Python.org] (https://www.python.org/)
 
 Also used the Code Institute material and notes for help.  
 
