@@ -3,14 +3,15 @@
 ![Coder Survey](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/responsive.jpg)
 
 ## Table of contents
-1. [Project](#Escape-The-Game)
+1. [Project](#Coder-Survey)
 2. [User](#User)
 3. [Languages and Tools Used](#Technologies-Used)
 4. [Features](#Features)
-5. [Testing](#Testing)
-6. [Deployment](#Deployment)
-7. [Refernces](#Referencess)
-8. [Acknowledgements](#Acknowledgements)
+5. [Data Model](#Data-Model)
+6. [Testing](#Testing)
+7. [Deployment](#Deployment)
+8. [Refernces](#Referencess)
+9. [Acknowledgements](#Acknowledgements)
 ***
 
 ## Project
@@ -19,6 +20,8 @@ This project aims to ask the user a series of questions.  Update Google sheets w
 
 [Back to top ⇧](#)
 
+**
+
 ## User
 
 ![First Screen](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/first.screen.jpg)
@@ -26,6 +29,8 @@ This project aims to ask the user a series of questions.  Update Google sheets w
 During this the user will be asked a series of questions and give predefined answers to choose from.  After answering all questions, the user will be given a list of their choices, the total of participates to date with survey and the results in percentages of what the total of participates voted for. 
 
 [Back to top ⇧](#)
+
+**
 
 ## Features
 
@@ -50,6 +55,20 @@ In the future I would consider adding the following feature.
 
 [Back to top ⇧](#)
 
+**
+
+## Data Model
+
+I decided to use Google Sheets.  I used 2 work sheets. My aim was that if I gave access to someone to add question to question sheet that this would appear in survey without updating code.  The other sheet "results" would store the data inputted by user and be used to calculate results and then updated with latest users answers. 
+
+![Questions Sheet]((https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/questions.jpg))
+
+![Results Sheet]((https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/sheet-results.jpg) )
+
+[Back to top ⇧](#)
+
+**
+
 ## Languages and Tools Used
 
 During this project the following languages were used:
@@ -62,9 +81,12 @@ During this project the following languages were used:
     
     1. GitPod
     2. GitHub
-    3. [Am I responsive](http://ami.responsivedesign.is/)
+    3. [Google Sheets](https://docs.google.com/spreadsheets/d/1wja4s13Cgmt5oTYlDKoP_2yisQXZu67QekdpGpHWXxA/edit?usp=sharing) 
+    4. [Am I responsive](http://ami.responsivedesign.is/)
 
 [Back to top ⇧](#)
+
+**
 
 ## Testing
 
@@ -78,12 +100,16 @@ My Testers were my son Cormac (17) and daughter Heather (14). They provided grea
 
 * PEP8
     [PEP8online.com](http://pep8online.com/)
-    Two errors for long lines of code were shown but this does not affect running of program.
+    Passed validator
+
+![Validator](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/validator.jpg)    
 
 ### Unfixed Bugs
 
 
 [Back to top ⇧](#)
+
+**
 
 ## Deployment
 
@@ -102,6 +128,8 @@ This project was deployed using Heroku
 
 [Back to top ⇧](#)
 
+**
+
 ## References
 
 During the research of this project, I used various sites to research issues as I was going along. 
@@ -113,6 +141,8 @@ Also used the Code Institute material and notes for help.
 
 
 [Back to top ⇧](#)
+
+**
 
 ## Acknowledgements
 
