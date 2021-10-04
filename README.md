@@ -58,6 +58,8 @@ I decided to use Google Sheets.  I used 2 work sheets. My aim was that if I gave
 
 ![Results-Sheet](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/sheet-results.jpg)
 
+If a new question is added both sheets need to be updated.  Questions Sheet with question number, question and 4 poissible answers and Results sheet with question number and zeros in cells under answers. 
+
 [Back to top ⇧](#)
 
 ## Languages and Tools Used
