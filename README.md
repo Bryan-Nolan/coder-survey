@@ -38,7 +38,7 @@ On beginning the user is told how many questions they will be answering and that
 
 There is also built-in error detection that if the user enters anything other than the required values they will be told of error and to ty again. 
 
-![Error](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/error.jpg)
+![Error](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/Error.jpg)
 
 After answering all questions, the user receives a summary of all the questions asked and how other partipates responed shown as percentages.
 
