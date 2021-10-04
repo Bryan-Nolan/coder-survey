@@ -20,8 +20,6 @@ This project aims to ask the user a series of questions.  Update Google sheets w
 
 [Back to top ⇧](#)
 
-**
-
 ## User
 
 ![First Screen](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/first.screen.jpg)
@@ -29,8 +27,6 @@ This project aims to ask the user a series of questions.  Update Google sheets w
 During this the user will be asked a series of questions and give predefined answers to choose from.  After answering all questions, the user will be given a list of their choices, the total of participates to date with survey and the results in percentages of what the total of participates voted for. 
 
 [Back to top ⇧](#)
-
-**
 
 ## Features
 
@@ -46,7 +42,6 @@ After answering all questions, the user receives a summary of all the questions 
 
 ![Results](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/results.jpg)
 
-
 ### Future Features
 
 In the future I would consider adding the following feature.
@@ -54,8 +49,6 @@ In the future I would consider adding the following feature.
     * Adding a feature to have an admin user as to add questions through the program.
 
 [Back to top ⇧](#)
-
-**
 
 ## Data Model
 
@@ -66,8 +59,6 @@ I decided to use Google Sheets.  I used 2 work sheets. My aim was that if I gave
 ![Results Sheet]((https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/sheet-results.jpg) )
 
 [Back to top ⇧](#)
-
-**
 
 ## Languages and Tools Used
 
@@ -86,8 +77,6 @@ During this project the following languages were used:
 
 [Back to top ⇧](#)
 
-**
-
 ## Testing
 
 This has been manually tested. Code has been passed through PEP8 and the only issues are lines of code exceeding 79 characters in length.  Unauthorised inputs have also been taken into account by prompting user to enter correct data. Also used GitIo terminal to show errors and Code Institute Heroku terminal.  
@@ -104,12 +93,7 @@ My Testers were my son Cormac (17) and daughter Heather (14). They provided grea
 
 ![Validator](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/validator.jpg)    
 
-### Unfixed Bugs
-
-
 [Back to top ⇧](#)
-
-**
 
 ## Deployment
 
@@ -128,8 +112,6 @@ This project was deployed using Heroku
 
 [Back to top ⇧](#)
 
-**
-
 ## References
 
 During the research of this project, I used various sites to research issues as I was going along. 
@@ -141,8 +123,6 @@ Also used the Code Institute material and notes for help.
 
 
 [Back to top ⇧](#)
-
-**
 
 ## Acknowledgements
 
