@@ -49,7 +49,8 @@ def questions_output(data):
             print(f"\n\nQuestion {question_row[0]}")
             print(f"{question_row[1]}\n")
             print("Please enter the number of your choice from 1-4.\n")
-            print(f"1: {question_row[2]} 2: {question_row[3]} 3: {question_row[4]} 4: {question_row[5]}\n")
+            print(f"1: {question_row[2]} 2: {question_row[3]} "
+                  f"3: {question_row[4]} 4: {question_row[5]}\n")
             data_str = input("Enter your choice here:\n")
 
             if validate_data(data_str):
@@ -139,15 +140,17 @@ def calculate_totals(current_results_data, data):
     """
     data_row = []
     data_row = current_results_data[0]
-    data_row.pop(0)
-    total = sum(data_row)
+    total = sum(data_row)-1
     print(f"\n{total} people have participated in this survey to date\n")
     for value in range(len(data)-1):
         data_row = current_results_data[value]
         question_row = data[value+1]
         print(f"Results for Question {question_row[0]}")
         print(question_row[1])
-        print(f"1: {question_row[2]} {round((data_row[0]/total)*100)}% 2: {question_row[3]} {round((data_row[1]/total)*100)}% 3: {question_row[4]} {round((data_row[2]/total)*100)}% 4: {question_row[5]} {round((data_row[3]/total)*100)}%\n")
+        print(f"1: {question_row[2]} {round((data_row[1]/total)*100)}% "
+              f"2: {question_row[3]} {round((data_row[2]/total)*100)}% "
+              f"3: {question_row[4]} {round((data_row[3]/total)*100)}% "
+              f"4: {question_row[5]} {round((data_row[4]/total)*100)}%\n")
 
 
 def main():
