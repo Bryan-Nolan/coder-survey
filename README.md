@@ -1,18 +1,16 @@
 # Coder Survey
 
-![Main Game]()
+![Coder Survey](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/responsive.jpg)
 
 ## Table of contents
 1. [Project](#Escape-The-Game)
 2. [User](#User)
-3. [Responsive](#Responsive)
-4. [The Story](#The-Story)
-5. [The Rules](#The-Rules)
-6. [Languages and Tools Used](#Technologies-Used)
-7. [Testing](#Testing)
-8. [Deployment](#Deployment)
-9. [Refernces](#Referencess)
-10. [Acknowledgements](#Acknowledgements)
+3. [Languages and Tools Used](#Technologies-Used)
+4. [Features](#Features)
+5. [Testing](#Testing)
+6. [Deployment](#Deployment)
+7. [Refernces](#Referencess)
+8. [Acknowledgements](#Acknowledgements)
 ***
 
 
@@ -25,34 +23,27 @@ This project aim to ask the user a seris of questions.  Update Gooogle sheets wi
 
 ## User
 
-![First Screen](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/first.screen.jpg - alt "First Screen")
+![First Screen](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/first.screen.jpg)
 
-
-
-[Back to top ⇧](#)
-
-## Responsive
-
-![Responsive]()
-
-In these times of multiple devices accessing websites, I have decided to make my site responsive to the following sizes
-
-Screen Size below 1280 pixels which to me equates to Laptop Screen.
-Screen Size below 768 pixels which to equates to tablet
-Screen Size below 500 pixels to suit large phone.
-Screen Size below 350 pixels to mobile.
-
-[Back to top ⇧](#)
-
-## The Story
-
+During this the user will be asked a seris of questions and give predefined answers to choice from.  After answering all question the user will be give a list of their choices,  the total of participates to date with survey and the results in percentages of what the total of participates voted for. 
 
 
 [Back to top ⇧](#)
 
-## The Rules
+## Features
 
-    
+On begining the user is told how many questions they will be answering and that the result swill be displayed at end. 
+
+![Info](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/info.jpg)
+
+There is also built in error detection that if the user enters anything other than the required values they will be told of error and to ty again. 
+
+![Error](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/error.jpg)
+
+After answering all questions the user receives a summary of all the questions asked and how other partipates responed shown as percentages.
+
+![Results](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/results.jpg)
+
 
 [Back to top ⇧](#)
 
@@ -78,15 +69,13 @@ My Testers were my son Cormac (17) and daughter Heather (14). They provided grea
 
 ### Validator Testing
 
-#### HTML
-No errors were returned when passing through the official W3C validator
+#### Python
 
-#### CSS
-No errors were found when passing through the official (Jigsaw) validator
+* PEP8
+    [PEP8online.com](http://pep8online.com/)
+    Two errors for long lines of code were shown but this does not affect running of program.
 
-##### Javascript
-[Jslint](https://www.jslint.com/)
-No errors just a few warning. 
+
 
 ### Unfixed Bugs
 
@@ -117,7 +106,8 @@ This project was deployed using Heroku
 
 During the research of this project I used various sites to research issues as I was going along. 
 
-[W3 Schools] (https://www.w3schools.com/) for reaserch.
+[W3 Schools] (https://www.w3schools.com/)
+[Python.org](https://www.python.org/)
 
 
 [Back to top ⇧](#)
