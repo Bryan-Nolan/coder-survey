@@ -16,7 +16,7 @@
 
 ## Project
 
-This project aim to ask the user a seris of questions.  Update Gooogle sheets with answers and to relay to the user their answers and how they compare with the all others answers giving results of all the question.  My aim is to be able to add more questions to the survey without having to change python code. 
+This project aims to ask the user a series of questions.  Update Google sheets with answers and to relay to the user their answers and how they compare with all other answers giving results of all the question.  My aim is to be able to add more questions to the survey without having to change python code. 
 
 
 [Back to top ⇧](#)
@@ -25,22 +25,22 @@ This project aim to ask the user a seris of questions.  Update Gooogle sheets wi
 
 ![First Screen](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/first.screen.jpg)
 
-During this the user will be asked a seris of questions and give predefined answers to choice from.  After answering all question the user will be give a list of their choices,  the total of participates to date with survey and the results in percentages of what the total of participates voted for. 
+During this the user will be asked a series of questions and give predefined answers to choose from.  After answering all questions, the user will be given a list of their choices, the total of participates to date with survey and the results in percentages of what the total of participates voted for. 
 
 
 [Back to top ⇧](#)
 
 ## Features
 
-On begining the user is told how many questions they will be answering and that the result swill be displayed at end. 
+On beginning the user is told how many questions they will be answering and that the results will be displayed at end. 
 
 ![Info](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/info.jpg)
 
-There is also built in error detection that if the user enters anything other than the required values they will be told of error and to ty again. 
+There is also built-in error detection that if the user enters anything other than the required values they will be told of error and to ty again. 
 
 ![Error](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/error.jpg)
 
-After answering all questions the user receives a summary of all the questions asked and how other partipates responed shown as percentages.
+After answering all questions, the user receives a summary of all the questions asked and how other partipates responed shown as percentages.
 
 ![Results](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/results.jpg)
 
@@ -104,7 +104,7 @@ This project was deployed using Heroku
 
 ## References
 
-During the research of this project I used various sites to research issues as I was going along. 
+During the research of this project, I used various sites to research issues as I was going along. 
 
 [W3 Schools] (https://www.w3schools.com/)
 [Python.org](https://www.python.org/)
