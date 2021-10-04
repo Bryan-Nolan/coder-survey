@@ -80,7 +80,6 @@ My Testers were my son Cormac (17) and daughter Heather (14). They provided grea
 ### Unfixed Bugs
 
 
-
 [Back to top ⇧](#)
 
 ## Deployment
@@ -94,11 +93,9 @@ This project was deployed using Heroku
         Link the Herohu app to the repository
         Click on Deploy
 
+### Code Survey - GitHub
 
-
-### Code Survey
-
-[Coder Survey](https://github.com/Bryan-Nolan/coder-survey)
+[Coder Survey GitHub Link](https://github.com/Bryan-Nolan/coder-survey)
 
 [Back to top ⇧](#)
 
@@ -109,12 +106,14 @@ During the research of this project, I used various sites to research issues as 
 [W3 Schools] (https://www.w3schools.com/)
 [Python.org](https://www.python.org/)
 
+Also used the Code Institute material and notes for help.  
+
 
 [Back to top ⇧](#)
 
 ## Acknowledgements
 
 Credit to Kasia for help and chats during this project.
-My mentor Maria who had great insight and guided me in the right direction. My classmates and my children Heather for her artistic eye and advising me on colours and also testing and Cormac for his help testing.
+My mentor Maria who had great insight and guided me in the right direction. My classmates and my children Heather and Cormac for help testing.
 
 [Back to top ⇧](#)
