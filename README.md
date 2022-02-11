@@ -1,10 +1,8 @@
-# Coder Survey
-
-![Coder Survey](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/responsive.jpg)
+# Lets Cook
 
 ## Table of contents
-1. [Project](#Coder-Survey)
-2. [User](#User)
+1. [Project](#Lets-Cook)
+2. [User Strories](#User)
 3. [Languages and Tools Used](#Technologies-Used)
 4. [Features](#Features)
 5. [Data Model](#Data-Model)
@@ -16,49 +14,26 @@
 
 ## Project
 
-This project aims to ask the user a series of questions.  Update Google sheets with answers and to relay to the user their answers and how they compare with all other answers giving results of all the question.  My aim is to be able to add more questions to the survey without having to change python code. 
+Lets Cook is a site where people can share recipes and vote and comment on other peoples recipes.  
+
+After talking with Student care I knwew I would be unable to complete project on time.  I am submitting a skeleton project and wil take fail and resubmit.
 
 [Back to top ⇧](#)
 
-## User
-
-![First Screen](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/first.screen.jpg)
-
-During this the user will be asked a series of questions and give predefined answers to choose from.  After answering all questions, the user will be given a list of their choices, the total of participates to date with survey and the results in percentages of what the total of participates voted for. 
+## User Stories
 
 [Back to top ⇧](#)
 
 ## Features
 
-On beginning the user is told how many questions they will be answering and that the results will be displayed at end. 
-
-![Info](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/info.jpg)
-
-There is also built-in error detection that if the user enters anything other than the required values they will be told of error and to ty again. 
-
-![Error](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/Error.jpg)
-
-After answering all questions, the user receives a summary of all the questions asked and how other participants response shown as percentages.
-
-![Results](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/results.jpg)
 
 ### Future Features
 
-    In the future I would consider adding the following feature.
-        - Users adding email addresses as to have 1 try per user
-        - Adding a feature to have an admin user as to add questions through the program.
-
+    
 [Back to top ⇧](#)
 
 ## Data Model
 
-I decided to use Google Sheets.  I used 2 work sheets. My aim was that if I gave access to someone to add question to question sheet that this would appear in survey without updating code.  The other sheet "results" would store the data inputted by user and be used to calculate results and then updated with latest users answers. 
-
-![Questions-Sheet](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/questions.jpg)
-
-![Results-Sheet](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/sheet-results.jpg)
-
-If a new question is added both sheets need to be updated.  Questions Sheet with question number, question and 4 poissible answers and Results sheet with question number and zeros in cells under answers. 
 
 [Back to top ⇧](#)
 
@@ -69,21 +44,25 @@ During this project the following languages were used:
 ### Languages
 
     1. Python
+    2. HTML
+    3. CSS
 
 ### Tools 
     
-    1. GitPod
-    2. GitHub
-    3. [Google Sheets](https://docs.google.com/spreadsheets/d/1wja4s13Cgmt5oTYlDKoP_2yisQXZu67QekdpGpHWXxA/edit?usp=sharing) 
-    4. [Am I responsive](http://ami.responsivedesign.is/)
+    1. Django - frmaework project built on
+    2. Cloudinary - Media Static file Storage
+    3. Crispyforms - Forms Formating 
+    4. Github - project depoistory 
+    5. Gitpod - IDE
+    6. PostgreSQL - Database
+    7. Google-Developer-Tools - for debugging
+    8. Bootstrap4 - css library
+    0. AmIResponsive - Check responsiveness
 
 [Back to top ⇧](#)
 
 ## Testing
 
-This has been manually tested. Code has been passed through PEP8 and the only issues are lines of code exceeding 79 characters in length.  Unauthorised inputs have also been taken into account by prompting user to enter correct data. Also used GitIo terminal to show errors and Code Institute Heroku terminal.  
-
-My Testers were my son Cormac (17) and daughter Heather (14). They provided great insight to navigating site and content.
 
 ### Validator Testing
 
@@ -91,9 +70,7 @@ My Testers were my son Cormac (17) and daughter Heather (14). They provided grea
 
 * PEP8
     [PEP8online.com](http://pep8online.com/)
-    Passed validator
 
-![Validator](https://github.com/Bryan-Nolan/coder-survey/blob/main/assets/readme_images/validator.jpg)    
 
 [Back to top ⇧](#)
 
@@ -101,9 +78,9 @@ My Testers were my son Cormac (17) and daughter Heather (14). They provided grea
 
 Heroku App
 
-coder-survey.herokuapp.com
+letscookb.herokuapp.com
 
-[Coder Survey](https://coder-survey.herokuapp.com/)
+[Coder Survey](https://letcookb.herokuapp.com/)
 
 This project was deployed using Heroku
 
@@ -118,9 +95,7 @@ This project was deployed using Heroku
 
 Git Hub Repository
 
-Bryan-Nolan/coder-survey
-
-[Coder Survey GitHub Link](https://github.com/Bryan-Nolan/coder-survey)
+[LetsCook]https://github.com/Bryan-Nolan/lets-cook
 
 [Back to top ⇧](#)
 
@@ -139,7 +114,5 @@ Also used the Code Institute material and notes for help.
 
 ## Acknowledgements
 
-Credit to Kasia for help and chats during this project.
-My mentor Maria who had great insight and guided me in the right direction. My classmates and my children Heather and Cormac for help testing.
 
 [Back to top ⇧](#)
